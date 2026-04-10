@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="./img/cal.png" type="image/png">
+</head>
+<body>
+    <div class="mesh-gradient"></div>
+    <main class="calculator">
+        <div class="display">
+            <div id="display-formula" class="display-formula"></div>
+            <div id="display-main" class="display-main">0</div>
+        </div>
+
+        <div class="keypad">
+            <div class="row memory-row">
+                <button type="button" id="btn-mc" class="btn-memory">MC</button>
+                <button type="button" id="btn-mr" class="btn-memory">MR</button>
+                <button type="button" id="btn-m-plus" class="btn-memory">M+</button>
+                <button type="button" id="btn-m-minus" class="btn-memory">M-</button>
+            </div>
+
+            <div class="row">
+                <button type="button" id="btn-ac" class="btn-function">AC</button>
+                <button type="button" id="btn-toggle" class="btn-function">+/-</button>
+                <button type="button" id="btn-percent" class="btn-function">%</button>
+                <button type="button" class="btn-operator" data-operator="÷">÷</button>
+            </div>
+
+            <div class="row">
+                <button type="button" class="btn-number" data-value="7">7</button>
+                <button type="button" class="btn-number" data-value="8">8</button>
+                <button type="button" class="btn-number" data-value="9">9</button>
+                <button type="button" class="btn-operator" data-operator="x">×</button>
+            </div>
+
+            <div class="row">
+                <button type="button" class="btn-number" data-value="4">4</button>
+                <button type="button" class="btn-number" data-value="5">5</button>
+                <button type="button" class="btn-number" data-value="6">6</button>
+                <button type="button" class="btn-operator" data-operator="-">−</button>
+            </div>
+
+            <div class="row">
+                <button type="button" class="btn-number" data-value="1">1</button>
+                <button type="button" class="btn-number" data-value="2">2</button>
+                <button type="button" class="btn-number" data-value="3">3</button>
+                <button type="button" class="btn-operator" data-operator="+">+</button>
+            </div>
+
+            <div class="row">
+                <button type="button" class="btn-number btn-zero" data-value="0">0</button>
+                <button type="button" class="btn-number" data-value=".">.</button>
+                <button type="button" id="btn-equals" class="btn-operator">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
